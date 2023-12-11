@@ -1,5 +1,5 @@
 /**
- * Get the first frame of a video as a data URL.
+ * 获取视频链接的帧动画导出png.
  * @param videoUrl - 视频url链接.
  * @param options - 额外字段.
  * @param options.width - 导出图片宽度.
@@ -70,3 +70,9 @@ type options = {
   height?: number;
 	num?: number
 };
+
+/**
+ * 示例：
+ * 获取第二帧动画导出920*1080尺寸的图片
+ * const data = await getFirstFrame('video.mp4', { width: 1920, height: 1080, num:2 })
+ */
