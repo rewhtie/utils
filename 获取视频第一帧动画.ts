@@ -68,7 +68,7 @@ export const getFirstFrame = (
 type options = {
   width?: number;
   height?: number;
-	num?: number
+  num?: number
 };
 
 /**
