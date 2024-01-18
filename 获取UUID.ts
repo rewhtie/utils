@@ -1,3 +1,4 @@
+import { last } from 'lodash'
 /**
  * 获取 UUID
  * @example
@@ -7,7 +8,7 @@ const getUUID = () => {
   const tempURL = URL.createObjectURL(new Blob())
   const uuid = tempURL.toString()
   URL.revokeObjectURL(tempURL)
-  return uuid.match(/(\w|\d)+-.+/)![0]
+  return last(uuid.split('/'))
 }
 
 export default getUUID
