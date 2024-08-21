@@ -1,0 +1,7 @@
+  background: #0e518f;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent; /* 左侧透明边框 */
+  border-right: 50px solid transparent; /* 右侧透明边框 */
+  border-top: 100px solid blue; /* 上方宽边框，模拟长方形的一部分 */
+  border-bottom: 50px solid red; /* 底部较窄边框，形成三角形 */
